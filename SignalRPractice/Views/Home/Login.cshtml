@@ -1,0 +1,38 @@
+﻿<div id="login">
+    <form action="/Home/Submit">
+        <table>
+            <tr>
+                <td>帳號：</td>
+                <td><input placeholder="請輸入帳號" name="name"></td>
+            </tr>
+            <tr>
+                <td>密碼：</td>
+                <td><input placeholder="請輸入密碼" name="password" type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="operation">
+                        <button id="submit" type="submit">登入</button>
+                        <button id="cancel">取消</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<style>
+    table {
+        margin: 200px auto;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+
+    .operation {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    button {
+        width: 80px;
+    }
+</style>

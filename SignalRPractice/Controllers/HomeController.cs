@@ -15,6 +15,12 @@ namespace SignalRPractice.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.UserName = "jing";
+            return View();
+        }
+
+        public IActionResult Login()
+        {
             return View();
         }
 
