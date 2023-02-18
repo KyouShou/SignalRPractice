@@ -41,8 +41,8 @@ namespace SignalRPractice.Controllers
         {
             UserInfo userInfo = _user.GetUser(name, password);
             if (string.IsNullOrEmpty(userInfo.ID))
-            {
-                return Redirect("/Home/Error");
+            {              
+                return Redirect("/Home/Login");
             }
             HttpContext.Session.SetString("userName" , userInfo.Name);
             Response.Cookies.Append("userName", userInfo.Name);

@@ -16,6 +16,7 @@ $("#sendButton").click(function () {
     connection.invoke("SendMessage" , user, message).catch(function (err) {
         return console.error(err.toString());
     })
+    $("#messageInput").text("");
 });
 
 connection.on("ReceiveMessage", function (user, message) {
